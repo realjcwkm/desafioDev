@@ -1,4 +1,5 @@
 *{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -7,24 +8,42 @@ header{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 
   background-color: #d3d3d3;
   height: 75px;
+  padding: 30px 5%;
 }
 
 img{
-
+  cursor: pointer;
+  margin-right: auto;
 }
 
 .menu{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  list-style: none;
 }
 
-.menu ul{
+.menu li{
+  display: inline-block;
   padding: 0 10px;
+}
+
+.searchBar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.searchBar input{
+  text-decoration: none;
+  outline: 0;
+  padding: 4px 4px;
+}
+
+.searchBar .btn{
+  margin-left: 5px;
 }
 
 .content{
